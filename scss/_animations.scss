@@ -1,0 +1,44 @@
+.h1-my-name-animation{
+    background: -webkit-linear-gradient(fade-out(white, 0.1), fade-out(white, 1));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+    animation: fadeIn 1s ease-in 1s;
+    animation-fill-mode: backwards;
+}
+
+.tagline-fadeIn {
+    animation: fadeIn 2.5s ease-in 1.5s;
+    animation-fill-mode: backwards;
+}
+
+.btn-moveInFromTop {
+    animation: btn-moveInFromTop 3s ease-in 3s;
+    animation-fill-mode: backwards;
+}
+
+
+@keyframes btn-moveInFromTop {
+    0%{
+      opacity: 0;
+      transform: translateY(-6px);
+    }
+
+    90% {
+        transform: translateY(-1px);
+    }
+  
+    100%{
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeIn {
+    0%{
+      opacity: 0;
+    }
+  
+    100%{
+      opacity: 1;
+    }
+  }

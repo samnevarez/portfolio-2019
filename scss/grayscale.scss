@@ -7,10 +7,20 @@
 @import 'projects.scss';
 @import 'signup.scss';
 @import 'contact.scss';
+@import 'animations.scss';
 
 body {
-  font-family: 'Nunito';
+  font-family: $secondary-font;
   letter-spacing: 0.0625em;
+  line-height: 1.5rem;
+}
+
+@for $i from 1 through 4 {
+  h#{5 - $i} {
+      font-size: $i * 1rem;
+      font-family: $primary-font;
+      line-height: $i * 1rem + .375rem;
+  }
 }
 
 a {

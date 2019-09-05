@@ -105,13 +105,10 @@
 }
 
 .masthead h1 {
-  font-family: 'Varela Round';
+  font-family: "Barlow Condensed", sans-serif;
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
 }
 
 .masthead h2 {
@@ -162,13 +159,13 @@
 
 .btn {
   padding: 1.25rem 2rem;
-  font-family: 'Varela Round';
+  font-family: "Open Sans", sans-serif;
   font-size: 80%;
   text-transform: uppercase;
   letter-spacing: .15rem;
   border: 0;
-  -webkit-box-shadow: 0 22px 12px -14px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 22px 12px -14px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 22px 12px -14px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 22px 12px -14px rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
@@ -180,8 +177,8 @@
 
 .btn-primary:hover {
   background-color: #3333ff;
-  -webkit-box-shadow: 0 16px 6px -8px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 16px 6px -8px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 14px 6px -8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 14px 6px -8px rgba(0, 0, 0, 0.3);
   -webkit-transform: translateY(-2px);
   transform: translateY(-2px);
   -webkit-transition-duration: .5s;
@@ -262,7 +259,7 @@
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
   height: auto;
-  font-family: 'Varela Round';
+  font-family: "Open Sans", sans-serif;
   font-size: 80%;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
@@ -280,7 +277,7 @@
 
 .contact-section .card h4 {
   font-size: 0.8rem;
-  font-family: 'Varela Round';
+  font-family: "Barlow Condensed", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
 }
@@ -313,9 +310,106 @@
   color: #fff;
 }
 
+.h1-my-name-animation {
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-animation: fadeIn 1s ease-in 1s;
+  animation: fadeIn 1s ease-in 1s;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+.tagline-fadeIn {
+  -webkit-animation: fadeIn 2.5s ease-in 1.5s;
+  animation: fadeIn 2.5s ease-in 1.5s;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+.btn-moveInFromTop {
+  -webkit-animation: btn-moveInFromTop 3s ease-in 3s;
+  animation: btn-moveInFromTop 3s ease-in 3s;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+@-webkit-keyframes btn-moveInFromTop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  90% {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes btn-moveInFromTop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  90% {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 body {
-  font-family: 'Nunito';
+  font-family: "Open Sans", sans-serif;
   letter-spacing: 0.0625em;
+  line-height: 1.5rem;
+}
+
+h4 {
+  font-size: 1rem;
+  font-family: "Barlow Condensed", sans-serif;
+  line-height: 1.375rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  line-height: 2.375rem;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: "Barlow Condensed", sans-serif;
+  line-height: 3.375rem;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "Barlow Condensed", sans-serif;
+  line-height: 4.375rem;
 }
 
 a {
