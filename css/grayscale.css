@@ -139,24 +139,6 @@
   }
 }
 
-@-webkit-keyframes imgFade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes imgFade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .btn {
   padding: 1.25rem 2rem;
   font-family: "Open Sans", sans-serif;
@@ -374,6 +356,24 @@
 }
 
 @keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes imgFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes imgFade {
   0% {
     opacity: 0;
   }
