@@ -185,6 +185,10 @@
   transition-delay: 0s;
 }
 
+.btn-project {
+  margin-top: 1rem;
+}
+
 .about-section {
   padding-top: 10rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(75%, rgba(22, 22, 22, 0.9)), to(rgba(22, 22, 22, 0.8)));
@@ -200,6 +204,7 @@
 }
 
 .projects-section .featured-text {
+  color: #fff;
   padding: 2rem;
 }
 
@@ -386,6 +391,7 @@ body {
   font-family: "Open Sans", sans-serif;
   letter-spacing: 0.0625em;
   line-height: 1.5rem;
+  background-color: #161616;
 }
 
 h4 {
@@ -423,6 +429,10 @@ a:focus, a:hover {
 
 .bg-black {
   background-color: #161616 !important;
+}
+
+.bg-dark {
+  background-color: #111 !important;
 }
 
 .bg-primary {

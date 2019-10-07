@@ -13,6 +13,7 @@ body {
   font-family: $secondary-font;
   letter-spacing: 0.0625em;
   line-height: 1.5rem;
+  background-color: $black;
 }
 
 @for $i from 1 through 4 {
@@ -34,6 +35,10 @@ a {
 
 .bg-black {
   background-color: $black !important;
+}
+
+.bg-dark {
+  background-color: #111 !important;
 }
 
 .bg-primary {
