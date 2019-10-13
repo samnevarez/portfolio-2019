@@ -2,7 +2,7 @@
 @import 'mixins.scss';
 @import 'navbar.scss';
 @import 'masthead.scss';
-@import 'buttons.scss';
+@import 'interactions.scss';
 @import 'about.scss';
 @import 'projects.scss';
 @import 'signup.scss';
@@ -21,15 +21,7 @@ body {
       font-size: $i * 1rem;
       font-family: $primary-font;
       line-height: $i * 1rem + .375rem;
-  }
-}
-
-a {
-  color: $primary;
-  &:focus,
-  &:hover {
-    text-decoration: none;
-    color: lighten($primary, 20%);
+      text-transform: uppercase;
   }
 }
 
