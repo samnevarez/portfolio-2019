@@ -1,6 +1,6 @@
 .h1-my-name-animation{
     color: $white;
-    animation: fadeIn 1s ease-in 1s;
+    animation: fadeIn 2s ease-in 1s;
     animation-fill-mode: backwards;
 }
 
@@ -33,15 +33,39 @@
   @keyframes fadeIn {
     0%{
       opacity: 0;
+      filter: blur(4px);
+      -webkit-filter: blur(4px);
     }
   
     100%{
       opacity: 1;
+      filter: blur(0px);
+      -webkit-filter: blur(0px);
     }
   }
 
   @keyframes imgFade {
     0% {
-      opacity: 0; }
+      opacity: 0;
+      filter: blur(0px);
+      -webkit-filter: blur(0px);
+    }
+
+    30% {
+      opacity: .4;
+      filter: blur(0px);
+      -webkit-filter: blur(0px);
+    }
+      
+    60% {
+      opacity: 1;
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
+    }
+    
     100% {
-      opacity: 1; } }  
+      opacity: .7;
+      filter: blur(4px);
+      -webkit-filter: blur(4px);
+    } 
+  }

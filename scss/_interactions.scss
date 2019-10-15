@@ -45,9 +45,10 @@
 // Link Styles
 
 a {
-  color: $primary;
+  color: $primary-url;
   text-decoration: none;
   &:hover {
-    color: lighten($primary, 20%);
+    color: lighten($primary-url, 20%);
+    text-decoration: underline;
   }
 }

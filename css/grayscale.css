@@ -92,15 +92,30 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: #161616;
-  background-position: center;
+  -o-object-fit: cover;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.masthead:before {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(22, 22, 22, 0.3)), color-stop(75%, rgba(22, 22, 22, 0.7)), to(#161616)), url(../img/home-bg.png);
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url(../img/home-bg.png);
+  background-position: top center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  z-index: -1;
   -webkit-animation-name: imgFade;
   animation-name: imgFade;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  opacity: .7;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
 }
 
 .masthead h1 {
@@ -194,17 +209,18 @@
 }
 
 a {
-  color: #0000FF;
+  color: #00ffff;
   text-decoration: none;
 }
 
 a:hover {
-  color: #6666ff;
+  color: #66ffff;
+  text-decoration: underline;
 }
 
 .about-section {
   padding: 3rem 0;
-  background: #212529;
+  background: #17122e;
   min-height: auto;
 }
 
@@ -290,8 +306,8 @@ a:hover {
 
 .h1-my-name-animation {
   color: #fff;
-  -webkit-animation: fadeIn 1s ease-in 1s;
-  animation: fadeIn 1s ease-in 1s;
+  -webkit-animation: fadeIn 2s ease-in 1s;
+  animation: fadeIn 2s ease-in 1s;
   -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards;
 }
@@ -343,36 +359,72 @@ a:hover {
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
   }
   100% {
     opacity: 1;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
   }
 }
 
 @keyframes fadeIn {
   0% {
     opacity: 0;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
   }
   100% {
     opacity: 1;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
   }
 }
 
 @-webkit-keyframes imgFade {
   0% {
     opacity: 0;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+  30% {
+    opacity: .4;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+  60% {
+    opacity: 1;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
   }
   100% {
-    opacity: 1;
+    opacity: .7;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
   }
 }
 
 @keyframes imgFade {
   0% {
     opacity: 0;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+  30% {
+    opacity: .4;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+  60% {
+    opacity: 1;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
   }
   100% {
-    opacity: 1;
+    opacity: .7;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
   }
 }
 
