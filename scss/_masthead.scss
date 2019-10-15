@@ -1,7 +1,5 @@
 .masthead {
   position: relative;
-  width: 100%;
-  height: auto;
   min-height: 35rem;
   padding: 15rem 0;
   object-fit: cover;
@@ -9,20 +7,22 @@
 
   &:before {
     content: ' ';
+    top: 0;
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom,rgba(22,22,22,.3) 0,rgba(22,22,22,.7) 75%,#161616 100%),url(../img/home-bg.png);
+    background: $black url(../img/home-bg.png);
     background-position: top center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
     z-index: -1;
-    animation-name: imgFade;
-    animation-duration: 6s;
-    opacity: .7;
-    filter: blur(4px);
-    -webkit-filter: blur(4px);
+    animation: imgFade 8s;
+    opacity: .2;
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+    -webkit-transform: scale(1.15) translateY(0);
+    transform: scale(1.15) translateY(0);
   }
 
   h1 {
