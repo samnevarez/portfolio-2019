@@ -109,7 +109,7 @@
   z-index: -1;
   -webkit-animation: imgFade 6.5s;
   animation: imgFade 6.5s;
-  opacity: .4;
+  opacity: .7;
   filter: blur(2px);
   -webkit-filter: blur(2px);
   -webkit-transform: scale(1) translateY(0);
@@ -533,7 +533,7 @@ a:hover {
     transform: scale(1.1) translateY(0);
   }
   100% {
-    opacity: .4;
+    opacity: .7;
     filter: blur(2px);
     -webkit-filter: blur(2px);
     background: #0000FF url(../img/home-bg.png);
@@ -683,7 +683,7 @@ a:hover {
     transform: scale(1.1) translateY(0);
   }
   100% {
-    opacity: .4;
+    opacity: .7;
     filter: blur(2px);
     -webkit-filter: blur(2px);
     background: #0000FF url(../img/home-bg.png);
