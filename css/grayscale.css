@@ -43,7 +43,6 @@
     padding-bottom: 0;
     border-bottom: none;
     background-color: transparent;
-    -webkit-transition: background-color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
@@ -51,7 +50,6 @@
     color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link {
-    -webkit-transition: none;
     transition: none;
     padding: 2rem 1.5rem;
     color: rgba(255, 255, 255, 0.5);
@@ -91,36 +89,51 @@
   min-height: 35rem;
   padding: 15rem 0;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   overflow: hidden;
+  /*
+  &:before {
+    content: ' ';
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: $primary url();
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    z-index: -1;
+    opacity: .7;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+  }
+  */
 }
 
-.masthead:before {
-  content: ' ';
-  top: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #0000FF url(../img/home-bg.png);
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-  z-index: -1;
-  -webkit-animation: imgFade 6.5s;
-  animation: imgFade 6.5s;
-  opacity: .7;
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
-  -webkit-transform: scale(1) translateY(0);
-  transform: scale(1) translateY(0);
+.masthead .h1-my-name-animation {
+  color: #fff;
+  -webkit-animation: text-flicker-in-glow 1s ease-in 2s;
+          animation: text-flicker-in-glow 1s ease-in 2s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.masthead .tagline-fadeIn {
+  -webkit-animation: text-flicker-in-glow 1s ease-in 2.5s;
+          animation: text-flicker-in-glow 1s ease-in 2.5s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  text-align: center;
+  letter-spacing: 0.0625em;
 }
 
 .masthead h1 {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 2.5rem;
   line-height: 2.5rem;
-  letter-spacing: 0.8rem;
 }
 
 .masthead h2 {
@@ -143,12 +156,18 @@
   .masthead h1 {
     font-size: 3rem;
     line-height: 3rem;
-    letter-spacing: 0.8rem;
   }
   .masthead h2 {
     max-width: 30rem;
     font-size: 1.25rem;
   }
+}
+
+.btn-moveInFromTop {
+  -webkit-animation: btn-moveInFromTop 3s ease-in 1s;
+          animation: btn-moveInFromTop 3s ease-in 1s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .btn {
@@ -158,11 +177,10 @@
   text-transform: uppercase;
   letter-spacing: .15rem;
   border: 0;
-  -webkit-box-shadow: 0 22px 12px -14px rgba(0, 0, 0, 0.2) !important;
   box-shadow: 0 22px 12px -14px rgba(0, 0, 0, 0.2) !important;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  transition: all 2s ease 0s;
   outline: none;
+  border-radius: 0;
 }
 
 .btn-primary {
@@ -172,33 +190,25 @@
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #3333ff;
-  -webkit-box-shadow: 0 14px 6px -8px rgba(0, 0, 0, 0.3) !important;
+  background-color: #4d4dff;
   box-shadow: 0 14px 6px -8px rgba(0, 0, 0, 0.3) !important;
-  -webkit-transform: translateY(-2px);
   transform: translateY(-2px);
-  -webkit-transition-duration: .5s;
   transition-duration: .5s;
 }
 
 .btn-primary:focus {
   color: #fff;
-  background-color: #3333ff;
-  -webkit-box-shadow: 0 16px 6px -8px rgba(0, 0, 0, 0.3) !important;
+  background-color: #4d4dff;
   box-shadow: 0 16px 6px -8px rgba(0, 0, 0, 0.3) !important;
   outline: none;
 }
 
 .btn-primary:active {
   color: #fff;
-  background-color: #0000cc !important;
-  -webkit-box-shadow: 0 8px 6px -8px rgba(0, 0, 0, 0.5);
+  background-color: #0000b3 !important;
   box-shadow: 0 8px 6px -8px rgba(0, 0, 0, 0.5);
-  -webkit-transform: translateY(1px);
   transform: translateY(1px);
-  -webkit-transition-duration: .1s;
   transition-duration: .1s;
-  -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
 
@@ -304,69 +314,77 @@ a:hover {
 
 .h1-my-name-animation {
   color: #fff;
-  -webkit-animation: text-flicker-in-glow 3s ease-in 2s;
-  animation: text-flicker-in-glow 3s ease-in 2s;
+  -webkit-animation: text-flicker-in-glow 0s ease-in 1s;
+          animation: text-flicker-in-glow 0s ease-in 1s;
   -webkit-animation-fill-mode: backwards;
-  animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .tagline-fadeIn {
-  -webkit-animation: text-flicker-in-glow 3.5s ease-in 2.5s;
-  animation: text-flicker-in-glow 3.5s ease-in 2.5s;
+  -webkit-animation: text-flicker-in-glow 1s ease-in 1.5s;
+          animation: text-flicker-in-glow 1s ease-in 1.5s;
   -webkit-animation-fill-mode: backwards;
-  animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  text-align: center;
 }
 
 .btn-moveInFromTop {
-  -webkit-animation: btn-moveInFromTop 4s ease-in 2s;
-  animation: btn-moveInFromTop 4s ease-in 2s;
+  -webkit-animation: btn-moveInFromTop 3s ease-in 1s;
+          animation: btn-moveInFromTop 3s ease-in 1s;
   -webkit-animation-fill-mode: backwards;
-  animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  text-align: center;
 }
 
 @-webkit-keyframes btn-moveInFromTop {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-6px);
     transform: translateY(-6px);
     background-color: #fff;
+    filter: blur(16px);
+    -webkit-filter: blur(16px);
+    border-radius: 100px;
   }
   80% {
     opacity: 0;
-    -webkit-transform: translateY(-6px);
-    transform: translateY(-6px);
-    filter: blur(16px);
-    -webkit-filter: blur(16px);
+    transform: translateY(-12px);
+    filter: blur(32px);
+    -webkit-filter: blur(32px);
     background-color: #fff;
+    border-radius: 100px;
   }
   100% {
     opacity: 1;
     filter: blur(0px);
     -webkit-filter: blur(0px);
     background-color: #0000FF;
+    border-radius: 0;
   }
 }
 
 @keyframes btn-moveInFromTop {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-6px);
     transform: translateY(-6px);
     background-color: #fff;
+    filter: blur(16px);
+    -webkit-filter: blur(16px);
+    border-radius: 100px;
   }
   80% {
     opacity: 0;
-    -webkit-transform: translateY(-6px);
-    transform: translateY(-6px);
-    filter: blur(16px);
-    -webkit-filter: blur(16px);
+    transform: translateY(-12px);
+    filter: blur(32px);
+    -webkit-filter: blur(32px);
     background-color: #fff;
+    border-radius: 100px;
   }
   100% {
     opacity: 1;
     filter: blur(0px);
     -webkit-filter: blur(0px);
     background-color: #0000FF;
+    border-radius: 0;
   }
 }
 
@@ -393,306 +411,6 @@ a:hover {
     opacity: 1;
     filter: blur(0px);
     -webkit-filter: blur(0px);
-  }
-}
-
-@-webkit-keyframes imgFade {
-  0% {
-    opacity: 0;
-    filter: blur(32px);
-    -webkit-filter: blur(32px);
-  }
-  10% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  10.1% {
-    opacity: 1;
-    text-shadow: none;
-  }
-  10.2% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  20% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  20.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
-  }
-  20.6% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  30% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  30.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
-  }
-  30.5% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
-  }
-  30.6% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  45% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  45.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
-  }
-  50% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
-  }
-  55% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
-  }
-  55.1% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  57% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  57.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
-  }
-  60% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
-  }
-  60.1% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  65% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  65.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
-  }
-  75% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
-  }
-  75.1% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  77% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  77.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
-  }
-  85% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-  }
-  85.1% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  86% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  86.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
-  }
-  90% {
-    opacity: .6;
-    filter: blur(16px);
-    -webkit-filter: blur(16px);
-    background: url(../img/home-bg-5.png);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    -webkit-transform: scale(1.1) translateY(0);
-    transform: scale(1.1) translateY(0);
-  }
-  100% {
-    opacity: .7;
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
-    background: #0000FF url(../img/home-bg.png);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    -webkit-transform: scale(1) translateY(0);
-    transform: scale(1) translateY(0);
-  }
-}
-
-@keyframes imgFade {
-  0% {
-    opacity: 0;
-    filter: blur(32px);
-    -webkit-filter: blur(32px);
-  }
-  10% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  10.1% {
-    opacity: 1;
-    text-shadow: none;
-  }
-  10.2% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  20% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  20.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
-  }
-  20.6% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  30% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  30.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
-  }
-  30.5% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
-  }
-  30.6% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  45% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  45.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
-  }
-  50% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
-  }
-  55% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
-  }
-  55.1% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  57% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  57.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
-  }
-  60% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
-  }
-  60.1% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  65% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  65.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
-  }
-  75% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
-  }
-  75.1% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  77% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  77.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
-  }
-  85% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-  }
-  85.1% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  86% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  86.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
-  }
-  90% {
-    opacity: .6;
-    filter: blur(16px);
-    -webkit-filter: blur(16px);
-    background: url(../img/home-bg-5.png);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    -webkit-transform: scale(1.1) translateY(0);
-    transform: scale(1.1) translateY(0);
-  }
-  100% {
-    opacity: .7;
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
-    background: #0000FF url(../img/home-bg.png);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    -webkit-transform: scale(1) translateY(0);
-    transform: scale(1) translateY(0);
   }
 }
 
@@ -957,10 +675,13 @@ a:hover {
 }
 
 body {
+  background-color: #161616;
+}
+
+body p {
   font-family: "Open Sans", sans-serif;
   letter-spacing: 0.0625em;
   line-height: 1.5rem;
-  background-color: #161616;
 }
 
 h4 {
@@ -1015,6 +736,6 @@ footer {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   overflow: hidden;
 }

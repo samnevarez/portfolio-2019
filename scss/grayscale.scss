@@ -9,10 +9,12 @@
 @import 'animations.scss';
 
 body {
+  background-color: $black;
+  p {
   font-family: $secondary-font;
   letter-spacing: 0.0625em;
   line-height: 1.5rem;
-  background-color: $black;
+  }
 }
 
 @for $i from 1 through 4 {

@@ -1,5 +1,10 @@
 // Button styles
 
+.btn-moveInFromTop {
+  animation: btn-moveInFromTop 3s ease-in 1s;
+  animation-fill-mode: backwards;
+}
+
 .btn {
   padding: 1.25rem 2rem;
   font-family: $secondary-font;
@@ -8,8 +13,9 @@
   letter-spacing: .15rem;
   border: 0;
   box-shadow: 0 22px 12px -14px rgba(0, 0, 0, 0.2) !important;
-  transition: all 0.3s ease 0s;
+  transition: all 2s ease 0s;
   outline: none;
+  border-radius: 0;
 }
 
 .btn-primary {
@@ -17,20 +23,20 @@
   text-decoration: none;
   &:hover {
     color: $white;
-    background-color: lighten($primary, 10%);
+    background-color: lighten($primary, 15%);
     box-shadow: 0 14px 6px -8px rgba(0, 0, 0, 0.3) !important;
     transform: translateY(-2px);
     transition-duration: .5s;
   }
   &:focus {
     color: $white;
-    background-color: lighten($primary, 10%);
+    background-color: lighten($primary, 15%);
     box-shadow: 0 16px 6px -8px rgba(0, 0, 0, 0.3) !important;
     outline: none;
   }
   &:active {
     color: $white;
-    background-color: darken($primary, 10%) !important;
+    background-color: darken($primary, 15%) !important;
     box-shadow: 0 8px 6px -8px rgba(0, 0, 0, 0.5);
     transform: translateY(1px);
     transition-duration: .1s;

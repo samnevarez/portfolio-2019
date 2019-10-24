@@ -1,17 +1,19 @@
 .h1-my-name-animation{
     color: $white;
-    animation: text-flicker-in-glow 3s ease-in 2s;
+    animation: text-flicker-in-glow 0s ease-in 1s;
     animation-fill-mode: backwards;
   }
 
 .tagline-fadeIn {
-    animation: text-flicker-in-glow 3.5s ease-in 2.5s;
+    animation: text-flicker-in-glow 1s ease-in 1.5s;
     animation-fill-mode: backwards;
+    text-align: center;
 }
 
 .btn-moveInFromTop {
-    animation: btn-moveInFromTop 4s ease-in 2s;
+    animation: btn-moveInFromTop 3s ease-in 1s;
     animation-fill-mode: backwards;
+    text-align: center;
 }
 
 @keyframes btn-moveInFromTop {
@@ -19,14 +21,18 @@
       opacity: 0;
       transform: translateY(-6px);
       background-color: $white;
+      filter: blur(16px);
+      -webkit-filter: blur(16px);
+      border-radius: 100px;
     }
 
     80% {
       opacity: 0;
-      transform: translateY(-6px);
-      filter: blur(16px);
-      -webkit-filter: blur(16px);
+      transform: translateY(-12px);
+      filter: blur(32px);
+      -webkit-filter: blur(32px);
       background-color: $white;
+      border-radius: 100px;
     }
   
     100%{
@@ -34,6 +40,7 @@
       filter: blur(0px);
       -webkit-filter: blur(0px);
       background-color: $primary;
+      border-radius: 0;
     }
   }
 
@@ -50,156 +57,6 @@
       -webkit-filter: blur(0px);
     }
   }
-
-@keyframes imgFade {
-  0% {
-    opacity: 0;
-    filter: blur(32px);
-    -webkit-filter: blur(32px);
-  }
-  10% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  10.1% {
-    opacity: 1;
-    text-shadow: none;
-  }
-  10.2% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  20% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  20.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
-  }
-  20.6% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  30% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  30.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
-  }
-  30.5% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
-  }
-  30.6% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  45% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  45.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
-  }
-  50% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
-  }
-  55% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
-  }
-  55.1% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  57% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  57.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
-  }
-  60% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
-  }
-  60.1% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  65% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  65.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
-  }
-  75% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
-  }
-  75.1% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  77% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  77.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
-  }
-  85% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-  }
-  85.1% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  86% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  86.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
-  }
-  90% {
-    opacity: .6;
-    filter: blur(16px);
-    -webkit-filter: blur(16px);
-    background: url(../img/home-bg-5.png);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    -webkit-transform: scale(1.1) translateY(0);
-    transform: scale(1.1) translateY(0);
-  }
-  100% {
-    opacity: .7;
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
-    background: $primary url(../img/home-bg.png);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    -webkit-transform: scale(1) translateY(0);
-    transform: scale(1) translateY(0);
-  }
-}
 
 @keyframes text-flicker-in-glow {
   0% {
