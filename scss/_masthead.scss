@@ -25,19 +25,6 @@
   }
   */
 
-  .h1-my-name-animation {
-    color: $white;
-    animation: text-flicker-in-glow 1s ease-in 2s;
-    animation-fill-mode: backwards;
-  }
-  
-  .tagline-fadeIn {
-    animation: text-flicker-in-glow 1s ease-in 2.5s;
-    animation-fill-mode: backwards;
-    text-align: center;
-    letter-spacing: 0.0625em;
-  }
-
   h1 {
     font-family: $primary-font;
     font-size: 2.5rem;

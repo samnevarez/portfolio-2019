@@ -113,23 +113,6 @@
   */
 }
 
-.masthead .h1-my-name-animation {
-  color: #fff;
-  -webkit-animation: text-flicker-in-glow 1s ease-in 2s;
-          animation: text-flicker-in-glow 1s ease-in 2s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
-}
-
-.masthead .tagline-fadeIn {
-  -webkit-animation: text-flicker-in-glow 1s ease-in 2.5s;
-          animation: text-flicker-in-glow 1s ease-in 2.5s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
-  text-align: center;
-  letter-spacing: 0.0625em;
-}
-
 .masthead h1 {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 2.5rem;
@@ -161,13 +144,6 @@
     max-width: 30rem;
     font-size: 1.25rem;
   }
-}
-
-.btn-moveInFromTop {
-  -webkit-animation: btn-moveInFromTop 3s ease-in 1s;
-          animation: btn-moveInFromTop 3s ease-in 1s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
 }
 
 .btn {
@@ -314,23 +290,23 @@ a:hover {
 
 .h1-my-name-animation {
   color: #fff;
-  -webkit-animation: text-flicker-in-glow 0s ease-in 1s;
-          animation: text-flicker-in-glow 0s ease-in 1s;
+  -webkit-animation: text-flicker-in-glow .5s ease-in 1;
+          animation: text-flicker-in-glow .5s ease-in 1;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
 
 .tagline-fadeIn {
-  -webkit-animation: text-flicker-in-glow 1s ease-in 1.5s;
-          animation: text-flicker-in-glow 1s ease-in 1.5s;
+  -webkit-animation: text-flicker-in-glow .5s ease-in .5s;
+          animation: text-flicker-in-glow .5s ease-in .5s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
   text-align: center;
 }
 
 .btn-moveInFromTop {
-  -webkit-animation: btn-moveInFromTop 3s ease-in 1s;
-          animation: btn-moveInFromTop 3s ease-in 1s;
+  -webkit-animation: btn-moveInFromTop 2s ease-in .5s;
+          animation: btn-moveInFromTop 2s ease-in .5s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
   text-align: center;
