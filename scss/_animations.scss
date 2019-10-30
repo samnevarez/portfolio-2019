@@ -1,19 +1,65 @@
 .h1-my-name-animation{
     color: $white;
-    animation: text-flicker-in-glow .5s ease-in 1;
+    animation: text-flicker-in-glow 1.5s ease-in 4s;
     animation-fill-mode: backwards;
   }
 
 .tagline-fadeIn {
-    animation: text-flicker-in-glow .5s ease-in .5s;
+    animation: text-flicker-in-glow 1.8s ease-in 4.2s;
     animation-fill-mode: backwards;
     text-align: center;
 }
 
 .btn-moveInFromTop {
-    animation: btn-moveInFromTop 2s ease-in .5s;
+    animation: btn-moveInFromTop 2s ease-in 4.5s;
     animation-fill-mode: backwards;
     text-align: center;
+}
+
+@keyframes bg-animation {
+
+  0% {
+    opacity: 0;
+    background: url(../img/sn-bg-large-1.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  }
+  25% {
+    opacity: .4;
+    background: url(../img/sn-bg-large-1.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+  60% {
+    opacity: .6;
+    background: url(../img/sn-bg-large-2.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+  80% {
+    opacity: .4;
+  }
+  100% {
+    opacity: .4;
+    background: $primary url(../img/sn-bg-large-1.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
 }
 
 @keyframes btn-moveInFromTop {
