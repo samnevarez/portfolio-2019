@@ -320,29 +320,6 @@ a:hover {
     filter: blur(8px);
     -webkit-filter: blur(8px);
   }
-  25% {
-    opacity: .4;
-    background: url(../img/sn-bg-large-1.png);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-  }
-  60% {
-    opacity: .6;
-    background: url(../img/sn-bg-large-2.png);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-  }
-  80% {
-    opacity: .4;
-  }
   100% {
     opacity: .4;
     background: #0000FF url(../img/sn-bg-large-1.png);
@@ -363,29 +340,6 @@ a:hover {
     background-size: cover;
     filter: blur(8px);
     -webkit-filter: blur(8px);
-  }
-  25% {
-    opacity: .4;
-    background: url(../img/sn-bg-large-1.png);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-  }
-  60% {
-    opacity: .6;
-    background: url(../img/sn-bg-large-2.png);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-  }
-  80% {
-    opacity: .4;
   }
   100% {
     opacity: .4;
