@@ -1,17 +1,17 @@
 .h1-my-name-animation{
     color: $white;
-    animation: text-flicker-in-glow 1.5s ease-in 4s;
+    animation: text-flicker-in-glow 1s ease-in 1s;
     animation-fill-mode: backwards;
   }
 
 .tagline-fadeIn {
-    animation: text-flicker-in-glow 1.8s ease-in 4.2s;
+    animation: text-flicker-in-glow 1s ease-in 1.2s;
     animation-fill-mode: backwards;
     text-align: center;
 }
 
 .btn-moveInFromTop {
-    animation: btn-moveInFromTop 2s ease-in 4.5s;
+    animation: btn-moveInFromTop 1s ease-in 1.5s;
     animation-fill-mode: backwards;
     text-align: center;
 }

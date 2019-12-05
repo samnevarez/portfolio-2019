@@ -17,15 +17,6 @@ body {
   }
 }
 
-@for $i from 1 through 4 {
-  h#{5 - $i} {
-      font-size: $i * 1rem;
-      font-family: $primary-font;
-      line-height: $i * 1rem + .375rem;
-      text-transform: uppercase;
-  }
-}
-
 .bg-black {
   background-color: $black !important;
 }
