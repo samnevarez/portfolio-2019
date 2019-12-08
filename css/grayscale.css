@@ -6,7 +6,12 @@
 
 #mainNav {
   min-height: 56px;
-  background-color: #fff;
+  background-color: #161616;
+  border-radius: 0;
+}
+
+#mainNav .navbar {
+  padding: 0.5rem 0.5rem;
 }
 
 #mainNav .navbar-toggler {
@@ -14,6 +19,7 @@
   padding: 0.75rem;
   color: #0000FF;
   border: 1px solid #0000FF;
+  border-radius: 0;
 }
 
 #mainNav .navbar-toggler:focus {
@@ -23,7 +29,7 @@
 #mainNav .navbar-brand {
   color: #3333ff;
   font-weight: 700;
-  padding: .9rem 0;
+  padding: .25;
 }
 
 #mainNav .navbar-nav .nav-item:hover {
@@ -52,10 +58,10 @@
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(0, 0, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link:hover {
-    color: rgba(0, 0, 255, 0.75);
+    color: rgba(255, 255, 255, 0.75);
   }
   #mainNav .nav-link:active {
     color: #0000FF;
@@ -213,18 +219,18 @@ h1 {
 }
 
 a {
-  color: #00ffff;
+  color: #00f7ff;
   text-decoration: none;
 }
 
 a:hover {
-  color: #66ffff;
+  color: #66faff;
   text-decoration: underline;
 }
 
 .about-section {
   padding: 4rem 0;
-  background: #17122e;
+  background: #24272b;
 }
 
 .projects-section {
@@ -722,7 +728,7 @@ body p {
 }
 
 .bg-dark {
-  background-color: #111 !important;
+  background-color: #24272b !important;
 }
 
 .bg-primary {
@@ -739,8 +745,22 @@ footer {
 
 .img-fluid {
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  overflow: hidden;
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  .mb-mobile-2 {
+    margin-bottom: 2rem;
+  }
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-section .card {
+  border: 0;
+  border-bottom: 0.25rem solid #495057;
 }

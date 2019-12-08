@@ -22,7 +22,7 @@ body {
 }
 
 .bg-dark {
-  background-color: #111 !important;
+  background-color: $gray-900 !important;
 }
 
 .bg-primary {
@@ -39,7 +39,22 @@ footer {
 
 .img-fluid {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  overflow: hidden;
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  .mb-mobile-2 {
+    margin-bottom: 2rem;
+  }
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-section .card{
+  border: 0;
+  border-bottom: .25rem solid $gray-700;
 }
