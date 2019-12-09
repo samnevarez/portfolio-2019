@@ -17,6 +17,62 @@ body {
   }
 }
 
+
+@media (min-width: 992px) {
+  #mainNav {
+    height: 56px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: 1px solid $primary;
+    background-color: $black;
+    transition: background-color 0.3s ease-in-out;
+    .navbar-brand {
+    padding: .5rem 0;
+    color: darken($white, 20%);
+      &:hover{
+        color: lighten($primary, 20%);
+      }
+    }
+  }
+  #mainNav .nav-link {
+    transition: none;
+    padding: 1rem 1.5rem .8rem 1.5rem;
+    color: darken($white, 20%);
+    border-bottom: 0.25rem solid transparent;
+  }
+  #mainNav .nav-link:hover {
+    color: lighten($primary, 20%);
+  }
+  #mainNav .nav-link:active {
+    color: lighten($primary, 20%);
+  }
+  #mainNav.navbar-shrink {
+    background-color: $black;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: darken($white, 20%);
+    &:hover{
+      color: lighten($primary, 20%);
+    }
+  }
+  #mainNav.navbar-shrink .nav-link {
+    color: darken($white, 20%);
+    padding: 1rem 1.5rem .8rem 1.5rem;
+    border-bottom: 0.25rem solid transparent;
+  }
+  #mainNav.navbar-shrink .nav-link:hover {
+    color: lighten($primary, 20%);
+  }
+  #mainNav.navbar-shrink .nav-link:active {
+    color: lighten($primary, 20%);
+  }
+  #mainNav.navbar-shrink .nav-link.active {
+    color: lighten($primary, 20%);
+    outline: none;
+    border-bottom: 0.25rem solid lighten($primary, 20%);
+  }
+}
+
 .bg-black {
   background-color: $black !important;
 }
