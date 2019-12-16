@@ -17,14 +17,13 @@ body {
   }
 }
 
-
 @media (min-width: 992px) {
   #mainNav {
     height: 56px;
     padding-top: 0;
     padding-bottom: 0;
-    border-bottom: 1px solid $primary;
     background-color: $black;
+    border-bottom: 1px solid $gray-700;
     transition: background-color 0.3s ease-in-out;
     .navbar-brand {
     padding: .5rem 0;
@@ -113,4 +112,9 @@ footer {
 .contact-section .card{
   border: 0;
   border-bottom: .25rem solid $gray-700;
+}
+
+.nav-svg {
+  width: auto;
+  height: 48px;
 }
