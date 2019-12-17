@@ -49,7 +49,7 @@
 }
 
 .nav-svg {
-  height: 54px;
+  height: 40px;
 }
 
 .masthead {
@@ -64,9 +64,9 @@
 
 .masthead:before {
   content: ' ';
-  opacity: .2;
-  -webkit-animation: bg-animation 2s ease-in-out;
-          animation: bg-animation 2s ease-in-out;
+  opacity: .5;
+  -webkit-animation: bg-animation 2.7s ease-in;
+          animation: bg-animation 2.7s ease-in;
   top: 0;
   position: absolute;
   width: 100%;
@@ -302,7 +302,7 @@ a:hover {
 @-webkit-keyframes bg-animation {
   0% {
     opacity: 0;
-    background: url(../img/sn-bg-large-1.png);
+    background: url(../img/sn-bg-large-0.png);
     background-position: top center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -310,8 +310,16 @@ a:hover {
     filter: blur(8px);
     -webkit-filter: blur(8px);
   }
+  60% {
+    opacity: 1;
+    background: url(../img/sn-bg-large-0.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
   100% {
-    opacity: .2;
+    opacity: .5;
     background: url(../img/sn-bg-large-1.png);
     background-position: top center;
     background-repeat: no-repeat;
@@ -323,7 +331,7 @@ a:hover {
 @keyframes bg-animation {
   0% {
     opacity: 0;
-    background: url(../img/sn-bg-large-1.png);
+    background: url(../img/sn-bg-large-0.png);
     background-position: top center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -331,8 +339,16 @@ a:hover {
     filter: blur(8px);
     -webkit-filter: blur(8px);
   }
+  60% {
+    opacity: 1;
+    background: url(../img/sn-bg-large-0.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
   100% {
-    opacity: .2;
+    opacity: .5;
     background: url(../img/sn-bg-large-1.png);
     background-position: top center;
     background-repeat: no-repeat;

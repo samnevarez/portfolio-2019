@@ -17,7 +17,7 @@
 
   0% {
     opacity: 0;
-    background: url(../img/sn-bg-large-1.png);
+    background: url(../img/sn-bg-large-0.png);
     background-position: top center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -25,8 +25,16 @@
     filter: blur(8px);
     -webkit-filter: blur(8px);
   }
+  60% {
+    opacity: 1;
+    background: url(../img/sn-bg-large-0.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
   100% {
-    opacity: .2;
+    opacity: .5;
     background: url(../img/sn-bg-large-1.png);
     background-position: top center;
     background-repeat: no-repeat;
