@@ -23,8 +23,9 @@ body {
     padding-top: 0;
     padding-bottom: 0;
     background-color: $black;
-    border-bottom: 1px solid $gray-700;
+    border-bottom: 1px solid $gray-900;
     transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.4) !important;
     .navbar-brand {
     padding: .5rem 0;
     color: darken($white, 20%);
@@ -117,10 +118,6 @@ footer {
 .contact-section .card hr{
   border: 0;
   border-bottom: .25rem solid $secondary;
-}
-
-.nav-svg {
-  width: auto;
 }
 
 .rotate-90-deg {

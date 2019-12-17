@@ -3,14 +3,16 @@
   min-height: 56px;
   background-color: $black;
   border-radius: 0;
+  border-bottom: 1px solid $gray-900;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.4) !important;
   .navbar {
-    padding: 0.5rem 0.5rem;
+    padding: .25rem;
   } 
   .navbar-toggler {
     font-size: 80%;
-    padding: 0.75rem;
-    color: $secondary;
-    border: 1px solid $primary;
+    padding: 1rem;
+    color: $white;
+    border: 1px solid $white;
     border-radius: 0;
     &:focus {
       outline: none;
@@ -19,7 +21,7 @@
   .navbar-brand {
     color: darken($white, 20%);
     font-weight: 700;
-    padding: .25;
+    padding: 0;
   }
 }
 .navbar-dark .navbar-nav .nav-link {
@@ -32,4 +34,8 @@
 
 .navbar-dark .navbar-nav .nav-link.active {
   color: $secondary;
+}
+
+.nav-svg {
+  height: 54px
 }

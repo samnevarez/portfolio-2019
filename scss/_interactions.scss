@@ -1,6 +1,6 @@
 // Button styles
 .btn {
-  padding: .25rem;
+  padding: .5rem;
   font-family: $secondary-font;
   font-size: 80%;
   text-transform: uppercase;
@@ -9,26 +9,26 @@
   box-shadow: 0 22px 12px -14px rgba(0, 0, 0, 0.2) !important;
   transition: all 2s ease 0s;
   outline: none;
-  border: 2px $gray-500 solid;
-  border-radius: 0;
+  border-radius: 0rem;
+  border-color: none;
 }
 
 .btn-primary {
-  background-color: $primary;
+  background: $primary;
   text-decoration: none;
   &:hover {
     color: $white;
-    background-color: lighten($primary, 20%);
+    background-color: lighten($primary, 10%);
     box-shadow: 0 14px 6px -8px rgba(0, 0, 0, 0.3) !important;
     transform: translateY(-2px);
     transition-duration: .5s;
-    border: 2px $white solid;
   }
   &:focus {
     color: $white;
-    background-color: lighten($primary, 20%);
+    background-color: lighten($primary, 10%);
     box-shadow: 0 16px 6px -8px rgba(0, 0, 0, 0.3) !important;
     outline: none;
+    
   }
   &:active {
     color: $white;
@@ -40,8 +40,8 @@
   }
 }
 
-.btn-icon {
-  fill: #000;
+.btn-primary:not(:disabled):not(.disabled).active {
+  border-color: none;
 }
 
 .btn-project {
