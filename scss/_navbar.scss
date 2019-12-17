@@ -16,6 +16,10 @@
     border-radius: 0;
     &:focus {
       outline: none;
+    &:hover {
+      color: $secondary;
+      border: 1px solid $secondary;
+    }
     }
   }
   .navbar-brand {
@@ -25,6 +29,7 @@
   }
 }
 .navbar-dark .navbar-nav .nav-link {
+    transition: 0.5s;
     color: darken($white, 20%);
     padding: 1rem 1rem;
     &:hover{

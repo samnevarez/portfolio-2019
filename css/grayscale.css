@@ -29,6 +29,11 @@
   outline: none;
 }
 
+#mainNav .navbar-toggler:focus:hover {
+  color: #00ffc8;
+  border: 1px solid #00ffc8;
+}
+
 #mainNav .navbar-brand {
   color: #cccccc;
   font-weight: 700;
@@ -36,6 +41,7 @@
 }
 
 .navbar-dark .navbar-nav .nav-link {
+  transition: 0.5s;
   color: #cccccc;
   padding: 1rem 1rem;
 }
@@ -286,15 +292,15 @@ a:hover {
 }
 
 .fadeIn {
-  -webkit-animation: fadeIn 1.2s ease-in-out 1.8s;
-          animation: fadeIn 1.2s ease-in-out 1.8s;
+  -webkit-animation: fadeIn 1s ease-in-out 1.6s;
+          animation: fadeIn 1s ease-in-out 1.6s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
 
 .tagline-fadeIn {
-  -webkit-animation: text-flicker-in-glow 1s ease-in 0s;
-          animation: text-flicker-in-glow 1s ease-in 0s;
+  -webkit-animation: text-flicker-in-glow 2s ease-in 0s;
+          animation: text-flicker-in-glow 2s ease-in 0s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
@@ -308,11 +314,16 @@ a:hover {
 
 @-webkit-keyframes fadeIn {
   0% {
+    transform: translateY(-12px);
     opacity: 0;
     filter: blur(12px);
     -webkit-filter: blur(12px);
   }
+  10% {
+    opacity: 0;
+  }
   100% {
+    transform: translateY(0px);
     opacity: 1;
     filter: blur(0px);
     -webkit-filter: blur(0px);
@@ -321,11 +332,16 @@ a:hover {
 
 @keyframes fadeIn {
   0% {
+    transform: translateY(-12px);
     opacity: 0;
     filter: blur(12px);
     -webkit-filter: blur(12px);
   }
+  10% {
+    opacity: 0;
+  }
   100% {
+    transform: translateY(0px);
     opacity: 1;
     filter: blur(0px);
     -webkit-filter: blur(0px);
@@ -392,15 +408,23 @@ a:hover {
 
 @-webkit-keyframes btn-moveInFromTop {
   0% {
-    opacity: 0;
-    transform: translateY(-500px);
+    opacity: 1;
+    transform: translateY(-1000px);
     background-color: #fff;
     filter: blur(40px);
     -webkit-filter: blur(40px);
     border-radius: 100px;
   }
+  50% {
+    opacity: .5;
+    filter: blur(12px);
+    -webkit-filter: blur(12px);
+    background-color: #fff;
+    border-radius: 100px;
+  }
   80% {
-    opacity: .4;
+    opacity: 0;
+    transform: translateY(0px);
     filter: blur(12px);
     -webkit-filter: blur(12px);
     background-color: #fff;
@@ -418,15 +442,23 @@ a:hover {
 
 @keyframes btn-moveInFromTop {
   0% {
-    opacity: 0;
-    transform: translateY(-500px);
+    opacity: 1;
+    transform: translateY(-1000px);
     background-color: #fff;
     filter: blur(40px);
     -webkit-filter: blur(40px);
     border-radius: 100px;
   }
+  50% {
+    opacity: .5;
+    filter: blur(12px);
+    -webkit-filter: blur(12px);
+    background-color: #fff;
+    border-radius: 100px;
+  }
   80% {
-    opacity: .4;
+    opacity: 0;
+    transform: translateY(0px);
     filter: blur(12px);
     -webkit-filter: blur(12px);
     background-color: #fff;
@@ -734,6 +766,7 @@ body p {
     padding: 1rem 1.5rem .8rem 1.5rem;
     color: #cccccc;
     border-bottom: 0.25rem solid transparent;
+    transition: .5s;
   }
   #mainNav .nav-link:hover {
     color: #00ffc8;

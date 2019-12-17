@@ -5,12 +5,12 @@
   }
 
 .fadeIn {
-  animation: fadeIn 1.2s ease-in-out 1.8s;
+  animation: fadeIn 1s ease-in-out 1.6s;
   animation-fill-mode: backwards;
 }
 
 .tagline-fadeIn {
-    animation: text-flicker-in-glow 1s ease-in 0s;
+    animation: text-flicker-in-glow 2s ease-in 0s;
     animation-fill-mode: backwards;
 }
 
@@ -20,13 +20,18 @@
 }
 
 @keyframes fadeIn {
-  0%{
+  0% {
+    transform: translateY(-12px);
     opacity: 0;
     filter: blur(12px);
     -webkit-filter: blur(12px);
   }
+  10% {
+    opacity: 0;
+  }
 
   100%{
+    transform: translateY(0px);
     opacity: 1;
     filter: blur(0px);
     -webkit-filter: blur(0px);
@@ -65,16 +70,24 @@
 
 @keyframes btn-moveInFromTop {
     0%{
-      opacity: 0;
-      transform: translateY(-500px);
+      opacity: 1;
+      transform: translateY(-1000px);
       background-color: $white;
       filter: blur(40px);
       -webkit-filter: blur(40px);
       border-radius: 100px;
     }
+    50% {
+      opacity: .5;
+      filter: blur(12px);
+      -webkit-filter: blur(12px);
+      background-color: $white;
+      border-radius: 100px;
+    }
 
     80% {
-      opacity: .4;
+      opacity: 0;
+      transform: translateY(0px);
       filter: blur(12px);
       -webkit-filter: blur(12px);
       background-color: $white;
