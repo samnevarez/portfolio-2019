@@ -1,6 +1,6 @@
 // Button styles
 .btn {
-  padding: 1.25rem 2rem;
+  padding: .25rem;
   font-family: $secondary-font;
   font-size: 80%;
   text-transform: uppercase;
@@ -9,6 +9,7 @@
   box-shadow: 0 22px 12px -14px rgba(0, 0, 0, 0.2) !important;
   transition: all 2s ease 0s;
   outline: none;
+  border: 2px $gray-500 solid;
   border-radius: 0;
 }
 
@@ -21,6 +22,7 @@
     box-shadow: 0 14px 6px -8px rgba(0, 0, 0, 0.3) !important;
     transform: translateY(-2px);
     transition-duration: .5s;
+    border: 2px $white solid;
   }
   &:focus {
     color: $white;
@@ -38,6 +40,10 @@
   }
 }
 
+.btn-icon {
+  fill: #000;
+}
+
 .btn-project {
   margin-top: 1rem;
 }
@@ -45,10 +51,10 @@
 // Link Styles
 
 a {
-  color: $primary-url;
+  color: $secondary;
   text-decoration: none;
   &:hover {
-    color: lighten($primary-url, 20%);
+    color: lighten($secondary, 20%);
     text-decoration: underline;
   }
 }

@@ -11,39 +11,25 @@
                 <polygon id="Rectangle" points="4 19 15 19 15 23 3 23"></polygon>
                 <polygon id="Rectangle" points="2 24 15 24 15 28 1 28"></polygon>
                 <rect id="Rectangle" x="16" y="9" width="1" height="21"></rect>
-                <rect id="Rectangle" x="18" y="9" width="4" height="1"></rect>
-                <rect id="Rectangle" x="18" y="11" width="4" height="1"></rect>
-                <rect id="Rectangle" x="18" y="13" width="4" height="1"></rect>
-                <rect id="Rectangle" x="18" y="15" width="4" height="1"></rect>
-                <rect id="Rectangle" x="18" y="17" width="4" height="1"></rect>
-                <rect id="Rectangle" x="18" y="19" width="4" height="1"></rect>
-                <rect id="Rectangle" x="18" y="21" width="4" height="1"></rect>
-                <rect id="Rectangle" x="18" y="23" width="4" height="1"></rect>
-                <rect id="Rectangle" x="18" y="19" width="4" height="1"></rect>
-                <rect id="Rectangle" x="18" y="25" width="4" height="1"></rect>
-                <rect id="Rectangle" x="18" y="21" width="4" height="1"></rect>
-                <rect id="Rectangle" x="18" y="27" width="4" height="1"></rect>
-                <rect id="Rectangle" x="18" y="23" width="4" height="1"></rect>
+                <rect id="Rectangle" x="18" y="9" width="6" height="1"></rect>
+                <rect id="Rectangle" x="18" y="11" width="6" height="1"></rect>
+                <rect id="Rectangle" x="18" y="13" width="6" height="1"></rect>
+                <rect id="Rectangle" x="18" y="15" width="6" height="1"></rect>
+                <rect id="Rectangle" x="18" y="17" width="6" height="1"></rect>
+                <rect id="Rectangle" x="18" y="19" width="6" height="1"></rect>
+                <rect id="Rectangle" x="18" y="21" width="6" height="1"></rect>
+                <rect id="Rectangle" x="18" y="23" width="6" height="1"></rect>
+                <rect id="Rectangle" x="18" y="19" width="6" height="1"></rect>
+                <rect id="Rectangle" x="18" y="25" width="6" height="1"></rect>
+                <rect id="Rectangle" x="18" y="21" width="6" height="1"></rect>
+                <rect id="Rectangle" x="18" y="27" width="6" height="1"></rect>
+                <rect id="Rectangle" x="18" y="23" width="6" height="1"></rect>
                 <polygon id="Rectangle" transform="translate(31.000000, 11.000000) scale(-1, 1) translate(-31.000000, -11.000000) " points="28 9 35 9 35 13 27 13"></polygon>
                 <polygon id="Rectangle" transform="translate(32.000000, 16.000000) scale(-1, 1) translate(-32.000000, -16.000000) " points="28 14 37 14 37 18 27 18"></polygon>
                 <polygon id="Rectangle" transform="translate(33.000000, 21.000000) scale(-1, 1) translate(-33.000000, -21.000000) " points="28 19 39 19 39 23 27 23"></polygon>
                 <polygon id="Rectangle" transform="translate(34.000000, 26.000000) scale(-1, 1) translate(-34.000000, -26.000000) " points="28 24 41 24 41 28 27 28"></polygon>
                 <rect id="Rectangle" transform="translate(25.500000, 19.500000) scale(-1, 1) translate(-25.500000, -19.500000) " x="25" y="9" width="1" height="21"></rect>
-                <rect id="Rectangle" transform="translate(22.000000, 9.500000) scale(-1, 1) translate(-22.000000, -9.500000) " x="20" y="9" width="4" height="1"></rect>
-                <rect id="Rectangle" transform="translate(22.000000, 11.500000) scale(-1, 1) translate(-22.000000, -11.500000) " x="20" y="11" width="4" height="1"></rect>
-                <rect id="Rectangle" transform="translate(22.000000, 13.500000) scale(-1, 1) translate(-22.000000, -13.500000) " x="20" y="13" width="4" height="1"></rect>
-                <rect id="Rectangle" transform="translate(22.000000, 15.500000) scale(-1, 1) translate(-22.000000, -15.500000) " x="20" y="15" width="4" height="1"></rect>
-                <rect id="Rectangle" transform="translate(22.000000, 17.500000) scale(-1, 1) translate(-22.000000, -17.500000) " x="20" y="17" width="4" height="1"></rect>
-                <rect id="Rectangle" transform="translate(22.000000, 19.500000) scale(-1, 1) translate(-22.000000, -19.500000) " x="20" y="19" width="4" height="1"></rect>
-                <rect id="Rectangle" transform="translate(22.000000, 21.500000) scale(-1, 1) translate(-22.000000, -21.500000) " x="20" y="21" width="4" height="1"></rect>
-                <rect id="Rectangle" transform="translate(22.000000, 23.500000) scale(-1, 1) translate(-22.000000, -23.500000) " x="20" y="23" width="4" height="1"></rect>
-                <rect id="Rectangle" transform="translate(22.000000, 19.500000) scale(-1, 1) translate(-22.000000, -19.500000) " x="20" y="19" width="4" height="1"></rect>
-                <rect id="Rectangle" transform="translate(22.000000, 25.500000) scale(-1, 1) translate(-22.000000, -25.500000) " x="20" y="25" width="4" height="1"></rect>
-                <rect id="Rectangle" transform="translate(22.000000, 21.500000) scale(-1, 1) translate(-22.000000, -21.500000) " x="20" y="21" width="4" height="1"></rect>
-                <rect id="Rectangle" transform="translate(22.000000, 27.500000) scale(-1, 1) translate(-22.000000, -27.500000) " x="20" y="27" width="4" height="1"></rect>
-                <rect id="Rectangle" x="18" y="29" width="4" height="1"></rect>
-                <rect id="Rectangle" transform="translate(22.000000, 29.500000) scale(-1, 1) translate(-22.000000, -29.500000) " x="20" y="29" width="4" height="1"></rect>
-                <rect id="Rectangle" transform="translate(22.000000, 23.500000) scale(-1, 1) translate(-22.000000, -23.500000) " x="20" y="23" width="4" height="1"></rect>
+                <rect id="Rectangle" x="18" y="29" width="6" height="1"></rect>
                 <rect id="Rectangle" x="14" y="6" width="14" height="2"></rect>
                 <rect id="Rectangle" x="14" y="0" width="14" height="3"></rect>
                 <rect id="Rectangle" x="22" y="4" width="6" height="1"></rect>

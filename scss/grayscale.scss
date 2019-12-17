@@ -29,7 +29,7 @@ body {
     padding: .5rem 0;
     color: darken($white, 20%);
       &:hover{
-        color: lighten($primary, 20%);
+        color: $secondary;
       }
     }
   }
@@ -40,10 +40,10 @@ body {
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav .nav-link:hover {
-    color: lighten($primary, 20%);
+    color: $secondary;
   }
   #mainNav .nav-link:active {
-    color: lighten($primary, 20%);
+    color: $secondary;
   }
   #mainNav.navbar-shrink {
     background-color: $black;
@@ -51,7 +51,7 @@ body {
   #mainNav.navbar-shrink .navbar-brand {
     color: darken($white, 20%);
     &:hover{
-      color: lighten($primary, 20%);
+      color: $secondary;
     }
   }
   #mainNav.navbar-shrink .nav-link {
@@ -60,15 +60,15 @@ body {
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: lighten($primary, 20%);
+    color: $secondary;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: lighten($primary, 20%);
+    color: $secondary;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: lighten($primary, 20%);
+    color: $secondary;
     outline: none;
-    border-bottom: 0.25rem solid lighten($primary, 20%);
+    border-bottom: 0.25rem solid $secondary;
   }
 }
 
@@ -111,10 +111,18 @@ footer {
 
 .contact-section .card{
   border: 0;
-  border-bottom: .25rem solid $gray-700;
+  border-bottom: .25rem solid $gray-800;
+}
+
+.contact-section .card hr{
+  border: 0;
+  border-bottom: .25rem solid $secondary;
 }
 
 .nav-svg {
   width: auto;
-  height: 48px;
+}
+
+.rotate-90-deg {
+  transform: rotate(90deg);
 }

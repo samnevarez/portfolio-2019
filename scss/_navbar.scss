@@ -9,7 +9,7 @@
   .navbar-toggler {
     font-size: 80%;
     padding: 0.75rem;
-    color: $primary;
+    color: $secondary;
     border: 1px solid $primary;
     border-radius: 0;
     &:focus {
@@ -26,10 +26,10 @@
     color: darken($white, 20%);
     padding: 1rem 1rem;
     &:hover{
-      color: lighten($primary, 20%);
+      color: $secondary;
     }
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
-  color: lighten($primary, 20%);
+  color: $secondary;
 }
