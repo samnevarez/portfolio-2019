@@ -1,18 +1,38 @@
 .h1-my-name-animation{
     color: $white;
-    animation: text-flicker-in-glow 1s ease-in 1s;
+    animation: text-flicker-in-glow 1s ease-in 3s;
     animation-fill-mode: backwards;
   }
 
+.fadeIn {
+  animation: fadeIn 1.2s ease-in-out 1.8s;
+  animation-fill-mode: backwards;
+}
+
 .tagline-fadeIn {
-    animation: text-flicker-in-glow 1s ease-in 1.2s;
+    animation: text-flicker-in-glow 1s ease-in 0s;
     animation-fill-mode: backwards;
 }
 
 .btn-moveInFromTop {
-    animation: btn-moveInFromTop 1s ease-in 1.5s;
+    animation: btn-moveInFromTop 2.6s ease-in 0s;
     animation-fill-mode: backwards;
 }
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+    filter: blur(12px);
+    -webkit-filter: blur(12px);
+  }
+
+  100%{
+    opacity: 1;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+}
+
 @keyframes bg-animation {
 
   0% {
@@ -25,7 +45,7 @@
     filter: blur(8px);
     -webkit-filter: blur(8px);
   }
-  60% {
+  80% {
     opacity: 1;
     background: url(../img/sn-bg-large-0.png);
     background-position: top center;
@@ -46,42 +66,28 @@
 @keyframes btn-moveInFromTop {
     0%{
       opacity: 0;
-      transform: translateY(-6px);
+      transform: translateY(-500px);
       background-color: $white;
-      filter: blur(16px);
-      -webkit-filter: blur(16px);
+      filter: blur(40px);
+      -webkit-filter: blur(40px);
       border-radius: 100px;
     }
 
     80% {
-      opacity: 0;
-      transform: translateY(-12px);
-      filter: blur(32px);
-      -webkit-filter: blur(32px);
+      opacity: .4;
+      filter: blur(12px);
+      -webkit-filter: blur(12px);
       background-color: $white;
       border-radius: 100px;
     }
   
     100%{
       opacity: 1;
+      transform: translateY(0px);
       filter: blur(0px);
       -webkit-filter: blur(0px);
       background-color: $primary;
       border-radius: 0;
-    }
-  }
-
-  @keyframes fadeIn {
-    0%{
-      opacity: 0;
-      filter: blur(4px);
-      -webkit-filter: blur(4px);
-    }
-  
-    100%{
-      opacity: 1;
-      filter: blur(0px);
-      -webkit-filter: blur(0px);
     }
   }
 
