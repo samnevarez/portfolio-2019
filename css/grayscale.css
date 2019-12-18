@@ -20,8 +20,8 @@
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 1rem;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #00ffc8;
+  border: 1px solid #00ffc8;
   border-radius: 0;
 }
 
@@ -203,7 +203,6 @@ a:hover {
 }
 
 .about-section {
-  padding: 4rem 0;
   background: #111;
 }
 
@@ -216,7 +215,7 @@ a:hover {
   padding: 2rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 320px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
     border-left: 0.5rem solid #0000FF;
