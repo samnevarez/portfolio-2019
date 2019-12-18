@@ -9,7 +9,7 @@
 @import 'animations.scss';
 
 body {
-  background-color: $black;
+  background-color: $primary-dark-200;
   p {
   font-family: $secondary-font;
   letter-spacing: 0.0625em;
@@ -22,8 +22,8 @@ body {
     height: 56px;
     padding-top: 0;
     padding-bottom: 0;
-    background-color: $black;
-    border-bottom: 1px solid $gray-900;
+    background-color: $primary-dark-200;
+    border-bottom: 1px solid $primary-dark-700;
     transition: background-color 0.3s ease-in-out;
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.4) !important;
     .navbar-brand {
@@ -48,7 +48,7 @@ body {
     color: $secondary;
   }
   #mainNav.navbar-shrink {
-    background-color: $black;
+    background-color: $primary-dark-300;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: darken($white, 20%);
@@ -75,7 +75,7 @@ body {
 }
 
 .bg-black {
-  background-color: $black !important;
+  background-color: $primary-dark-400 !important;
 }
 
 .bg-dark {
@@ -113,14 +113,24 @@ footer {
 
 .contact-section .card{
   border: 0;
-  border-bottom: .25rem solid $gray-800;
+  border-bottom: .25rem solid $primary-dark-600;
 }
 
 .contact-section .card hr{
   border: 0;
-  border-bottom: .25rem solid $secondary;
+  border-bottom: .25rem solid $primary-dark-600;
 }
 
 .rotate-90-deg {
   transform: rotate(90deg);
+}
+
+.rotate-180-deg{
+  transform: rotate(180deg);
+}
+
+@media (max-width: 992px) {
+  .rotate-180-deg{
+    transform: rotate(0deg);
+  }
 }

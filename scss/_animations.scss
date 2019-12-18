@@ -1,3 +1,4 @@
+
 .h1-my-name-animation{
     color: $white;
     animation: text-flicker-in-glow 1s ease-in 3s;
@@ -59,7 +60,7 @@
     background-size: cover;
   }
   100% {
-    opacity: .5;
+    opacity: 1;
     background: url(../img/sn-bg-large-1.png);
     background-position: top center;
     background-repeat: no-repeat;

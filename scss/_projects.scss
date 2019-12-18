@@ -1,5 +1,4 @@
 .projects-section {
-  padding: 4rem 0;
   .featured-text {
     color:$white;
     padding: 2rem;
@@ -9,10 +8,10 @@
     }
   }
   .project-text {
-    padding: 3rem;
+    padding: 2rem;
     font-size: 90%;
     @media (min-width: 992px) {
-      padding: 5rem;
+      padding: 2rem;
       hr {
         border-color: $primary;
         border-width: .25rem;
