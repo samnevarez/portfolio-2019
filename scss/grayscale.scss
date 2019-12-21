@@ -8,6 +8,47 @@
 @import 'contact.scss';
 @import 'animations.scss';
 
+/* -- Start -- Margin -- El Castillo Design System 4 Point. 16 Incriments -- */
+
+/* -- Margin Top -- */
+
+@for $i from 1 through 17 {
+  .ecmt-#{-1 + $i} {
+    margin-top: $i * .25rem - .25rem;
+  }
+}
+
+/* -- Margin Bottom -- */
+
+@for $i from 1 through 17 {
+  .ecmb-#{-1 + $i} {
+    margin-bottom: $i * .25rem - .25rem;
+  }
+}
+
+/* -- END -- Margin -- El Castillo Design System 4 Point. 16 Incriments -- */
+
+
+@for $i from 1 through 4 {
+  h#{5 - $i} {
+      font-size: $i * 1rem;
+      font-family: $primary-font;
+      line-height: $i * 1rem + .375rem;
+      text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  @for $i from 1 through 4 {
+    h#{5 - $i} {
+        font-size: $i * .75rem;
+        font-family: $primary-font;
+        line-height: $i * .75rem + .25rem;
+        text-transform: uppercase;
+    }
+  }
+}
+
 body {
   background-color: $primary-dark-200;
   p {
@@ -15,6 +56,10 @@ body {
   letter-spacing: 0.0625em;
   line-height: 1.5rem;
   }
+}
+
+.text-white-75 {
+  color: rgba(255, 255, 255, 0.75) !important;
 }
 
 @media (min-width: 992px) {

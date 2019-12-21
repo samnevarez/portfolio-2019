@@ -77,68 +77,12 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #0000FF;
   background: url(../img/sn-bg-large-1.png);
   background-position: bottom center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
   z-index: -1;
-}
-
-h4 {
-  font-size: 1rem;
-  font-family: "Barlow Condensed", sans-serif;
-  line-height: 1.375rem;
-  text-transform: uppercase;
-}
-
-h3 {
-  font-size: 2rem;
-  font-family: "Barlow Condensed", sans-serif;
-  line-height: 2.375rem;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: 3rem;
-  font-family: "Barlow Condensed", sans-serif;
-  line-height: 3.375rem;
-  text-transform: uppercase;
-}
-
-h1 {
-  font-size: 4rem;
-  font-family: "Barlow Condensed", sans-serif;
-  line-height: 4.375rem;
-  text-transform: uppercase;
-}
-
-@media screen and (max-width: 768px) {
-  h4 {
-    font-size: 0.75rem;
-    font-family: "Barlow Condensed", sans-serif;
-    line-height: 1rem;
-    text-transform: uppercase;
-  }
-  h3 {
-    font-size: 1.5rem;
-    font-family: "Barlow Condensed", sans-serif;
-    line-height: 1.75rem;
-    text-transform: uppercase;
-  }
-  h2 {
-    font-size: 2.25rem;
-    font-family: "Barlow Condensed", sans-serif;
-    line-height: 2.5rem;
-    text-transform: uppercase;
-  }
-  h1 {
-    font-size: 3rem;
-    font-family: "Barlow Condensed", sans-serif;
-    line-height: 3.25rem;
-    text-transform: uppercase;
-  }
 }
 
 .btn {
@@ -162,7 +106,7 @@ h1 {
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #3333ff;
+  background-color: #4d4dff;
   box-shadow: 0 14px 6px -8px rgba(0, 0, 0, 0.3) !important;
   transform: translateY(-2px);
   transition-duration: .5s;
@@ -170,7 +114,7 @@ h1 {
 
 .btn-primary:focus {
   color: #fff;
-  background-color: #3333ff;
+  background-color: #4d4dff;
   box-shadow: 0 16px 6px -8px rgba(0, 0, 0, 0.3) !important;
   outline: none;
 }
@@ -189,7 +133,7 @@ h1 {
 }
 
 .btn-project {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 a {
@@ -275,9 +219,8 @@ a:hover {
 }
 
 .h1-my-name-animation {
-  color: #fff;
-  -webkit-animation: text-flicker-in-glow 1s ease-in 3s;
-          animation: text-flicker-in-glow 1s ease-in 3s;
+  -webkit-animation: text-flicker-in-glow 2s ease-in 1s;
+          animation: text-flicker-in-glow 2s ease-in 1s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
@@ -350,7 +293,7 @@ a:hover {
     filter: blur(8px);
     -webkit-filter: blur(8px);
   }
-  80% {
+  60% {
     opacity: 1;
     background: url(../img/sn-bg-large-0.png);
     background-position: bottom center;
@@ -379,7 +322,7 @@ a:hover {
     filter: blur(8px);
     -webkit-filter: blur(8px);
   }
-  80% {
+  60% {
     opacity: 1;
     background: url(../img/sn-bg-large-0.png);
     background-position: bottom center;
@@ -471,127 +414,11 @@ a:hover {
     filter: blur(6px);
     -webkit-filter: blur(6px);
   }
-  10% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  10.1% {
-    opacity: 1;
-    text-shadow: none;
-  }
-  10.2% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  20% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  20.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
-  }
-  20.6% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  30% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  30.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
-  }
-  30.5% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
-  }
-  30.6% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  45% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  45.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
-  }
-  50% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
-  }
-  55% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
-  }
-  55.1% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  57% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  57.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
-  }
-  60% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
-  }
-  60.1% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  65% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  65.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
-  }
-  75% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
-  }
-  75.1% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  77% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  77.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
-  }
-  85% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-  }
-  85.1% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  86% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  86.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
-  }
   100% {
     opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+    text-shadow: none;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
   }
 }
 
@@ -601,127 +428,206 @@ a:hover {
     filter: blur(6px);
     -webkit-filter: blur(6px);
   }
-  10% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  10.1% {
+  100% {
     opacity: 1;
     text-shadow: none;
-  }
-  10.2% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  20% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  20.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
-  }
-  20.6% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  30% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  30.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
-  }
-  30.5% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
-  }
-  30.6% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  45% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  45.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
-  }
-  50% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
-  }
-  55% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
-  }
-  55.1% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  57% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  57.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
-  }
-  60% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
-  }
-  60.1% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  65% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  65.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
-  }
-  75% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
-  }
-  75.1% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  77% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  77.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
-  }
-  85% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
     filter: blur(0px);
     -webkit-filter: blur(0px);
   }
-  85.1% {
-    opacity: 0;
-    text-shadow: none;
+}
+
+/* -- Start -- Margin -- El Castillo Design System 4 Point. 16 Incriments -- */
+/* -- Margin Top -- */
+.ecmt-0 {
+  margin-top: 0rem;
+}
+
+.ecmt-1 {
+  margin-top: 0.25rem;
+}
+
+.ecmt-2 {
+  margin-top: 0.5rem;
+}
+
+.ecmt-3 {
+  margin-top: 0.75rem;
+}
+
+.ecmt-4 {
+  margin-top: 1rem;
+}
+
+.ecmt-5 {
+  margin-top: 1.25rem;
+}
+
+.ecmt-6 {
+  margin-top: 1.5rem;
+}
+
+.ecmt-7 {
+  margin-top: 1.75rem;
+}
+
+.ecmt-8 {
+  margin-top: 2rem;
+}
+
+.ecmt-9 {
+  margin-top: 2.25rem;
+}
+
+.ecmt-10 {
+  margin-top: 2.5rem;
+}
+
+.ecmt-11 {
+  margin-top: 2.75rem;
+}
+
+.ecmt-12 {
+  margin-top: 3rem;
+}
+
+.ecmt-13 {
+  margin-top: 3.25rem;
+}
+
+.ecmt-14 {
+  margin-top: 3.5rem;
+}
+
+.ecmt-15 {
+  margin-top: 3.75rem;
+}
+
+.ecmt-16 {
+  margin-top: 4rem;
+}
+
+/* -- Margin Bottom -- */
+.ecmb-0 {
+  margin-bottom: 0rem;
+}
+
+.ecmb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.ecmb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.ecmb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.ecmb-4 {
+  margin-bottom: 1rem;
+}
+
+.ecmb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.ecmb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.ecmb-7 {
+  margin-bottom: 1.75rem;
+}
+
+.ecmb-8 {
+  margin-bottom: 2rem;
+}
+
+.ecmb-9 {
+  margin-bottom: 2.25rem;
+}
+
+.ecmb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.ecmb-11 {
+  margin-bottom: 2.75rem;
+}
+
+.ecmb-12 {
+  margin-bottom: 3rem;
+}
+
+.ecmb-13 {
+  margin-bottom: 3.25rem;
+}
+
+.ecmb-14 {
+  margin-bottom: 3.5rem;
+}
+
+.ecmb-15 {
+  margin-bottom: 3.75rem;
+}
+
+.ecmb-16 {
+  margin-bottom: 4rem;
+}
+
+/* -- END -- Margin -- El Castillo Design System 4 Point. 16 Incriments -- */
+h4 {
+  font-size: 1rem;
+  font-family: "Barlow Condensed", sans-serif;
+  line-height: 1.375rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  line-height: 2.375rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: "Barlow Condensed", sans-serif;
+  line-height: 3.375rem;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "Barlow Condensed", sans-serif;
+  line-height: 4.375rem;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  h4 {
+    font-size: 0.75rem;
+    font-family: "Barlow Condensed", sans-serif;
+    line-height: 1rem;
+    text-transform: uppercase;
   }
-  86% {
-    opacity: 0;
-    text-shadow: none;
+  h3 {
+    font-size: 1.5rem;
+    font-family: "Barlow Condensed", sans-serif;
+    line-height: 1.75rem;
+    text-transform: uppercase;
   }
-  86.1% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+  h2 {
+    font-size: 2.25rem;
+    font-family: "Barlow Condensed", sans-serif;
+    line-height: 2.5rem;
+    text-transform: uppercase;
   }
-  100% {
-    opacity: 1;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+  h1 {
+    font-size: 3rem;
+    font-family: "Barlow Condensed", sans-serif;
+    line-height: 3.25rem;
+    text-transform: uppercase;
   }
 }
 
@@ -733,6 +639,10 @@ body p {
   font-family: "Open Sans", sans-serif;
   letter-spacing: 0.0625em;
   line-height: 1.5rem;
+}
+
+.text-white-75 {
+  color: rgba(255, 255, 255, 0.75) !important;
 }
 
 @media (min-width: 992px) {
