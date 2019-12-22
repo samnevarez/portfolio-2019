@@ -7,32 +7,29 @@
 @import 'projects.scss';
 @import 'contact.scss';
 @import 'animations.scss';
+@import 'el-castillo-design-system.scss';
 
-/* -- Start -- Margin -- El Castillo Design System 4 Point. 16 Incriments -- */
-
-/* -- Margin Top -- */
-
-@for $i from 1 through 17 {
-  .ecmt-#{-1 + $i} {
-    margin-top: $i * .25rem - .25rem;
+body {
+  background-color: $primary-dark-200;
+  p {
+  font-family: $secondary-font;
+  font-size: .875rem;
+  color: rgba(255, 255, 255, 0.75) !important;
+  letter-spacing: 0.0625em;
+  line-height: 1.5rem;
   }
 }
 
-/* -- Margin Bottom -- */
-
-@for $i from 1 through 17 {
-  .ecmb-#{-1 + $i} {
-    margin-bottom: $i * .25rem - .25rem;
-  }
+.text-white-75 {
+  color: rgba(255, 255, 255, 0.75) !important;
 }
-
-/* -- END -- Margin -- El Castillo Design System 4 Point. 16 Incriments -- */
-
 
 @for $i from 1 through 4 {
   h#{5 - $i} {
+      color: $white;
       font-size: $i * 1rem;
       font-family: $primary-font;
+      font-weight: 400;
       line-height: $i * 1rem + .375rem;
       text-transform: uppercase;
   }
@@ -41,25 +38,14 @@
 @media screen and (max-width: 768px) {
   @for $i from 1 through 4 {
     h#{5 - $i} {
+        color: $white;
         font-size: $i * .75rem;
         font-family: $primary-font;
+        font-weight: 400;
         line-height: $i * .75rem + .25rem;
         text-transform: uppercase;
     }
   }
-}
-
-body {
-  background-color: $primary-dark-200;
-  p {
-  font-family: $secondary-font;
-  letter-spacing: 0.0625em;
-  line-height: 1.5rem;
-  }
-}
-
-.text-white-75 {
-  color: rgba(255, 255, 255, 0.75) !important;
 }
 
 @media (min-width: 992px) {
@@ -142,6 +128,10 @@ footer {
 .img-fluid {
   width: 100%;
   height: auto;
+}
+
+.ecborder{
+  border: 1px solid $primary-dark-600;
 }
 
 @media (max-width: 992px) {

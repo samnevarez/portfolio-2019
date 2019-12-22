@@ -1,0 +1,154 @@
+/* -- Start -- Margin -- El Castillo Design System 4 Point. 16 Incriments -- */
+
+/* -- Margin Top -- */
+
+@for $i from 1 through 17 {
+	.ecmt-#{-1 + $i} {
+			margin-top: $i * .25rem - .25rem !important;
+	}
+}
+
+/* -- Margin Right -- */
+
+@for $i from 1 through 17 {
+	.ecmr-#{-1 + $i} {
+			margin-right: $i * .25rem - .25rem !important;
+	}
+}
+
+/* -- Margin Bottom -- */
+
+@for $i from 1 through 17 {
+	.ecmb-#{-1 + $i} {
+			margin-bottom: $i * .25rem - .25rem !important;
+	}
+}
+
+/* -- Margin Left -- */
+
+@for $i from 1 through 17 {
+	.ecml-#{-1 + $i} {
+			margin-left: $i * .25rem - .25rem !important;
+	}
+}
+
+/* -- Margin X -- */
+
+@for $i from 1 through 17 {
+	.ecmx-#{-1 + $i} {
+			margin: 0 $i * .25rem - .25rem !important;
+	}
+}
+
+/* -- Margin Y -- */
+
+@for $i from 1 through 17 {
+	.ecmy-#{-1 + $i} {
+			margin: $i * .25rem - .25rem 0 !important;
+	}
+}
+
+/* -- MOBILE -- MOBILE -- MOBILE -- MOBILE -- MOBILE --*/
+
+@media screen and (max-width: 992px) {
+ /* -- Margin Top -- */
+
+ @for $i from 1 through 17 {
+  .ecmt-#{-1 + $i} {
+    margin-top: $i * .1875rem - .1875rem !important;
+  }
+ }
+
+ /* -- Margin Right -- */
+
+ @for $i from 1 through 17 {
+  .ecmr-#{-1 + $i} {
+    margin-right: $i * .1875rem - .1875rem !important;
+  }
+ }
+
+ /* -- Margin Bottom -- */
+
+ @for $i from 1 through 17 {
+  .ecmb-#{-1 + $i} {
+    margin-bottom: $i * .1875rem - .1875rem !important;
+  }
+ }
+
+ /* -- Margin Left -- */
+
+ @for $i from 1 through 17 {
+  .ecml-#{-1 + $i} {
+    margin-left: $i * .1875rem - .1875rem !important;
+  }
+ }
+
+ /* -- Margin X -- */
+
+ @for $i from 1 through 17 {
+  .ecmx-#{-1 + $i} {
+    margin: 0 $i * .1875rem - .1875rem !important;
+  }
+ }
+
+ /* -- Margin Y -- */
+
+ @for $i from 1 through 17 {
+  .ecmy-#{-1 + $i} {
+    margin: $i * .1875rem - .1875rem 0 !important;
+  }
+ }
+}
+
+/* -- ONLY MOBILE -- ONLY MOBILE --*/
+
+@media screen and (max-width: 992px) {
+	/* -- Margin Top -- */
+
+	@for $i from 1 through 17 {
+.ecmt-m-#{-1 + $i} {
+		margin-top: $i * .1875rem - .1875rem !important;
+}
+	}
+
+	/* -- Margin Right -- */
+
+	@for $i from 1 through 17 {
+.ecmr-m-#{-1 + $i} {
+		margin-right: $i * .1875rem - .1875rem !important;
+}
+	}
+
+	/* -- Margin Bottom -- */
+
+	@for $i from 1 through 17 {
+.ecmb-m-#{-1 + $i} {
+		margin-bottom: $i * .1875rem - .1875rem !important;
+}
+	}
+
+	/* -- Margin Left -- */
+
+	@for $i from 1 through 17 {
+.ecml-m-#{-1 + $i} {
+		margin-left: $i * .1875rem - .1875rem !important;
+}
+	}
+
+	/* -- Margin X -- */
+
+	@for $i from 1 through 17 {
+.ecmx-m-#{-1 + $i} {
+		margin: 0 $i * .1875rem - .1875rem !important;
+}
+	}
+
+	/* -- Margin Y -- */
+
+	@for $i from 1 through 17 {
+.ecmy-m-#{-1 + $i} {
+		margin: $i * .1875rem - .1875rem 0 !important;
+}
+	}
+}
+/* -- END -- Margin -- El Castillo Design System 4 Point. 16 Incriments -- */
