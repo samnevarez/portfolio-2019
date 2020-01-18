@@ -4,9 +4,9 @@
 
 ## Preview
 
-[![Grayscale Preview](https://startbootstrap.com/assets/img/screenshots/themes/grayscale.png)](https://blackrockdigital.github.io/startbootstrap-grayscale/)
+[![Grayscale Preview](https://startbootstrap.com/assets/img/screenshots/themes/grayscale.png)](http://samnevarez.com/)
 
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-grayscale/)**
+**[View Live Preview](http://samnevarez.com/)**
 
 ## Status
 
