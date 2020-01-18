@@ -4,7 +4,7 @@
 
 ## Preview
 
-[![Grayscale Preview](https://startbootstrap.com/assets/img/screenshots/themes/grayscale.png)](http://samnevarez.com/)
+[![Grayscale Preview](http://samnevarez.com/preview/samnevarez-preview.png)](http://samnevarez.com/)
 
 **[View Live Preview](http://samnevarez.com/)**
 
