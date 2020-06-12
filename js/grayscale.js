@@ -8,7 +8,7 @@
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: (target.offset().top - 70)
+          scrollTop: (target.offset().top - 80)
         }, 1000, "easeInOutExpo");
         return false;
       }
@@ -40,3 +40,7 @@
   $(window).scroll(navbarCollapse);
 
 })(jQuery); // End of use strict
+
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})

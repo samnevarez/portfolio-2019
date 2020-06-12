@@ -1,24 +1,28 @@
 /* mobile style */
 #mainNav {
   min-height: 56px;
-  background-color: $black;
+  background-color: $primary-dark-300;
   border-radius: 0;
-  border-bottom: 1px solid $gray-900;
+  border-bottom: 1px solid $primary-dark-700;
   box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.4) !important;
+
+  .nav-svg {
+    height: 40px;
+  }
+
   .navbar {
-    padding: .25rem;
+    padding: 0rem;
   } 
   .navbar-toggler {
-    font-size: 80%;
-    padding: 1rem;
-    color: $white;
-    border: 1px solid $white;
+    padding: 0;
+    color: $secondary;
+    border: none;
     border-radius: 0;
     &:focus {
       outline: none;
     &:hover {
       color: $secondary;
-      border: 1px solid $secondary;
+      border: none;
     }
     }
   }
@@ -39,8 +43,4 @@
 
 .navbar-dark .navbar-nav .nav-link.active {
   color: $secondary;
-}
-
-.nav-svg {
-  height: 40px;
 }

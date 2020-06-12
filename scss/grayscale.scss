@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import 'variables.scss';
 @import 'mixins.scss';
 @import 'navbar.scss';
@@ -7,13 +8,44 @@
 @import 'projects.scss';
 @import 'contact.scss';
 @import 'animations.scss';
+@import 'el-castillo-design-system.scss';
 
 body {
-  background-color: $black;
+  background-color: $primary-dark-200;
   p {
   font-family: $secondary-font;
+  font-size: .875rem;
+  color: rgba(255, 255, 255, 0.75) !important;
   letter-spacing: 0.0625em;
   line-height: 1.5rem;
+  }
+}
+
+.text-white-75 {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+@for $i from 1 through 4 {
+  h#{5 - $i} {
+      color: $white;
+      font-size: $i * 1rem;
+      font-family: $primary-font;
+      font-weight: 400;
+      line-height: $i * 1rem + .375rem;
+      text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  @for $i from 1 through 4 {
+    h#{5 - $i} {
+        color: $white;
+        font-size: $i * .75rem;
+        font-family: $primary-font;
+        font-weight: 400;
+        line-height: $i * .75rem + .25rem;
+        text-transform: uppercase;
+    }
   }
 }
 
@@ -22,8 +54,8 @@ body {
     height: 56px;
     padding-top: 0;
     padding-bottom: 0;
-    background-color: $black;
-    border-bottom: 1px solid $gray-900;
+    background-color: $primary-dark-200;
+    border-bottom: 1px solid $primary-dark-700;
     transition: background-color 0.3s ease-in-out;
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.4) !important;
     .navbar-brand {
@@ -48,7 +80,7 @@ body {
     color: $secondary;
   }
   #mainNav.navbar-shrink {
-    background-color: $black;
+    background-color: $primary-dark-300;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: darken($white, 20%);
@@ -75,7 +107,7 @@ body {
 }
 
 .bg-black {
-  background-color: $black !important;
+  background-color: $primary-dark-300 !important;
 }
 
 .bg-dark {
@@ -99,6 +131,10 @@ footer {
   height: auto;
 }
 
+.ecborder{
+  border: 1px solid $primary-dark-600;
+}
+
 @media (max-width: 992px) {
   .mb-mobile-2 {
     margin-bottom: 2rem;
@@ -113,14 +149,24 @@ footer {
 
 .contact-section .card{
   border: 0;
-  border-bottom: .25rem solid $gray-800;
+  border-bottom: .25rem solid $primary-dark-600;
 }
 
 .contact-section .card hr{
   border: 0;
-  border-bottom: .25rem solid $secondary;
+  border-bottom: .25rem solid $primary-dark-600;
 }
 
 .rotate-90-deg {
   transform: rotate(90deg);
+}
+
+.rotate-180-deg{
+  transform: rotate(180deg);
+}
+
+@media (max-width: 992px) {
+  .rotate-180-deg{
+    transform: rotate(0deg);
+  }
 }

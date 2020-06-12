@@ -18,14 +18,14 @@
   text-decoration: none;
   &:hover {
     color: $white;
-    background-color: lighten($primary, 10%);
+    background-color: lighten($primary, 15%);
     box-shadow: 0 14px 6px -8px rgba(0, 0, 0, 0.3) !important;
     transform: translateY(-2px);
     transition-duration: .5s;
   }
   &:focus {
     color: $white;
-    background-color: lighten($primary, 10%);
+    background-color: lighten($primary, 15%);
     box-shadow: 0 16px 6px -8px rgba(0, 0, 0, 0.3) !important;
     outline: none;
     
@@ -42,10 +42,6 @@
 
 .btn-primary:not(:disabled):not(.disabled).active {
   border-color: none;
-}
-
-.btn-project {
-  margin-top: 1rem;
 }
 
 // Link Styles
