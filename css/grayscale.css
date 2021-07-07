@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Grayscale v5.0.8 (https://startbootstrap.com/template-overviews/grayscale)
- * Copyright 2013-2020 Start Bootstrap
+ * Copyright 2013-2021 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
 
@@ -24,7 +24,7 @@
 
 #mainNav .navbar-toggler {
   padding: 0;
-  color: #8080ff;
+  color: white;
   border: none;
   border-radius: 0;
 }
@@ -34,7 +34,7 @@
 }
 
 #mainNav .navbar-toggler:focus:hover {
-  color: #8080ff;
+  color: white;
   border: none;
 }
 
@@ -51,11 +51,11 @@
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #8080ff;
+  color: white;
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #8080ff;
+  color: white;
 }
 
 .masthead {
@@ -106,7 +106,7 @@
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #4d4dff;
+  background-color: #3333ff;
   box-shadow: 0 14px 6px -8px rgba(0, 0, 0, 0.3) !important;
   transform: translateY(-2px);
   transition-duration: .5s;
@@ -114,14 +114,14 @@
 
 .btn-primary:focus {
   color: #fff;
-  background-color: #4d4dff;
+  background-color: #3333ff;
   box-shadow: 0 16px 6px -8px rgba(0, 0, 0, 0.3) !important;
   outline: none;
 }
 
 .btn-primary:active {
   color: #fff;
-  background-color: #0000b3 !important;
+  background-color: #0000cc !important;
   box-shadow: 0 8px 6px -8px rgba(0, 0, 0, 0.5);
   transform: translateY(1px);
   transition-duration: .1s;
@@ -133,12 +133,12 @@
 }
 
 a {
-  color: #8080ff;
+  color: white;
   text-decoration: none;
 }
 
 a:hover {
-  color: #e6e6ff;
+  color: white;
   text-decoration: underline;
 }
 
@@ -5627,8 +5627,8 @@ h1 {
     height: 56px;
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #00001a;
-    border-bottom: 1px solid #000099;
+    background-color: #000033;
+    border-bottom: 1px solid #0000b3;
     transition: background-color 0.3s ease-in-out;
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.4) !important;
   }
@@ -5637,7 +5637,7 @@ h1 {
     color: #cccccc;
   }
   #mainNav .navbar-brand:hover {
-    color: #8080ff;
+    color: white;
   }
   #mainNav .nav-link {
     transition: none;
@@ -5647,19 +5647,19 @@ h1 {
     transition: .5s;
   }
   #mainNav .nav-link:hover {
-    color: #8080ff;
+    color: white;
   }
   #mainNav .nav-link:active {
-    color: #8080ff;
+    color: white;
   }
   #mainNav.navbar-shrink {
-    background-color: #000033;
+    background-color: #00001a;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #cccccc;
   }
   #mainNav.navbar-shrink .navbar-brand:hover {
-    color: #8080ff;
+    color: white;
   }
   #mainNav.navbar-shrink .nav-link {
     color: #cccccc;
@@ -5667,20 +5667,20 @@ h1 {
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #8080ff;
+    color: white;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #8080ff;
+    color: white;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #8080ff;
+    color: white;
     outline: none;
-    border-bottom: 0.25rem solid #8080ff;
+    border-bottom: 0.25rem solid white;
   }
 }
 
 .bg-black {
-  background-color: #000033 !important;
+  background-color: #00004d !important;
 }
 
 .bg-dark {
